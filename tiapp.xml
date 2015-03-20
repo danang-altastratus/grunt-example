@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <id>us.altastrat.gruntexample</id>
+    <name>bootstrap</name>
+    <version>1.0</version>
+    <publisher>Edwin Ardiwinata</publisher>
+    <url>http://blog.altastrat.us</url>
+    <description>Bootstrap application that shows how developer should utilize TDD (Test Driven Development), Unit Testing, Code Coverage Report, Code Style Analysis and Code Documentation via grunt task manager.</description>
+    <copyright>2015 by Altastratus</copyright>
+    <icon>appicon.png</icon>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>F2EF4518-B49C-4C81-B749-C125E21858C3</guid>
+    <property name="ti.ui.defaultunit" type="string">dp</property>
+    <ios>
+        <plist>
+            <dict>
+                <key>UISupportedInterfaceOrientations~iphone</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                </array>
+                <key>UISupportedInterfaceOrientations~ipad</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                    <string>UIInterfaceOrientationPortraitUpsideDown</string>
+                    <string>UIInterfaceOrientationLandscapeLeft</string>
+                    <string>UIInterfaceOrientationLandscapeRight</string>
+                </array>
+                <key>UIRequiresPersistentWiFi</key>
+                <false/>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+                <key>UIStatusBarHidden</key>
+                <false/>
+                <key>UIStatusBarStyle</key>
+                <string>UIStatusBarStyleDefault</string>
+                <key>CFBundleURLTypes</key>
+                <array>
+                    <dict>
+                        <key>CFBundleTypeRole</key>
+                        <string>Editor</string>
+                        <key>CFBundleURLName</key>
+                        <string>com.gulfstream.bootstrap</string>
+                        <key>CFBundleURLSchemes</key>
+                        <array>
+                            <string>touchtest-5d177a30-7171-428e-b2c9-fe880ed014bf</string>
+                        </array>
+                    </dict>
+                </array>
+            </dict>
+        </plist>
+    </ios>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <manifest>
+            <application>
+                <activity
+                    android:configChanges="keyboardHidden|orientation"
+                    android:label="gruntExample"
+                    android:name=".GruntExampleActivity" android:theme="@style/Theme.Titanium">
+                </activity>
+                <service android:enabled="true" android:exported="false" android:name="com.soasta.android.touchtest.TouchTestService"/>
+            </application>
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+            <uses-permission android:name="android.permission.INTERNET"/>
+            <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+            <uses-permission android:name="android.permission.BLUETOOTH"/>
+            <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+            <uses-permission android:name="android.permission.GET_TASKS"/>
+        </manifest>
+    </android>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules/>
+    <deployment-targets>
+        <target device="android">true</target>
+        <target device="blackberry">false</target>
+        <target device="ipad">true</target>
+        <target device="iphone">true</target>
+        <target device="mobileweb">false</target>
+    </deployment-targets>
+    <sdk-version>3.5.1.GA</sdk-version>
+</ti:app>
