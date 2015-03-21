@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Controllers",
+        "groups": [
+            {
+                "name": "App Index",
+                "classes": ["Controllers.index"]
+            }
+        ]
+    },
+    {
+    	"name": "Libraries",
+    	"groups": [
+    		{
+    			"name": "App Libraries",
+    			"classes": ["Libraries.example"]
+    		},
+    		{
+    			"name": "3rd Party Libraries",
+    			"classes": []
+    		}
+    	]
+    }
+]

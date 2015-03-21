@@ -1,0 +1,8 @@
+#appname:bootstrap
+#publisher:Edwin Ardiwinata
+#url:http://blog.altastrat.us
+#image:appicon.png
+#appid:us.altastrat.gruntexample
+#desc:Bootstrap application that shows how developer should utilize TDD (Test Driven Development), Unit Testing, Code Coverage Report, Code Style Analysis and Code Documentation via grunt task manager.
+#type:ipad
+#guid:6fe66d70-3f67-4aa7-b09a-67b1bd44f84a
