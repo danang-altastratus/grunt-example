@@ -79,7 +79,6 @@ module.exports = function(grunt) {
 			    disallowMultipleLineBreaks: true,
 			    disallowMultipleLineStrings: true,
 			    disallowMixedSpacesAndTabs: true,
-			    disallowMultipleVarDecl: true,
 			    disallowKeywordsOnNewLine: ['else'],
 			    disallowNewlineBeforeBlockStatements: true,
 			    disallowPaddingNewlinesInBlocks: true,
@@ -87,14 +86,16 @@ module.exports = function(grunt) {
 			    excludeFiles: ['app/lib/ti-mocha.js']
         	}
         },
-		jsduck: { main: {
+
+		jsduck: { 
+			main: {
 				src: ['app/**/*.js'],
 				
 				dest: 'docs',
 				options: {
 					'builtin-classes': false,
-					warnings: ['-nodoc', '-dup_member', '-link_ambiguous'],
-					title: 'Gulfstream Bootstrap',
+					warnings: ['-nodoc', '-dup_member', '-link_ambiguous', '-html'],
+					title: 'Grunt Example',
 					exclude: ['app/lib/ti-mocha.js'],
 					categories: 'jsduckCategories.json'
 				}

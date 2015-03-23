@@ -41,7 +41,7 @@
                         <key>CFBundleTypeRole</key>
                         <string>Editor</string>
                         <key>CFBundleURLName</key>
-                        <string>com.gulfstream.bootstrap</string>
+                        <string>us.altastrat.gruntexample</string>
                         <key>CFBundleURLSchemes</key>
                         <array>
                             <string>touchtest-5d177a30-7171-428e-b2c9-fe880ed014bf</string>

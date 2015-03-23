@@ -11,3 +11,7 @@ Thumbs.db
 node_modules
 docs
 reports
+<<<<<<< HEAD
+=======
+plugins
+>>>>>>> 9f82f1aa9fb3b725135f25461b7812726f335438
